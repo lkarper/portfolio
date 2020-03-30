@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website of Luther Karper, web developer.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Zilla+Slab:wght@300;400&display=swap"
         rel="stylesheet">
@@ -11,48 +11,52 @@
     <link rel="stylesheet" href="style.css">
     <title>Luther Karper - Web Developer</title>
 </head>
-
 <body>
     <nav>
         <div class="small-container">
-            <a class="title" href="https://github.com/lkarper">Luther Karper</a>
+            <a class="title" href=".">Luther Karper</a>
             <i class="fas fa-bars js-menu toggle"></i>
         </div>
-        <ul id="nav-ul">
-            <li class="js-bio">Bio</li>
-            <li class="js-portfolio">Portfolio</li>
+        <ul id="nav-ul">                    
+            <li class="js-bio"><button type="button">Bio</button></li>
+            <li class="js-portfolio"><button type="button">Portfolio</button></li>
             <li><a href="https://github.com/lkarper">GitHub</a></li>
             <li><a href="http://www.linkedin.com/in/luther-karper">LinkedIn</a></li>
         </ul>
     </nav>
-    <div class="content">
+    <div class="content" role="region">
         <main>
             <header class="js-header">
                 <h1>Hi, I'm Luther.</h1>
                 <p class="short-bio">I’m a <b>web developer</b>, <b>classicist</b>, and <b>digital humanist</b>.</p>
+                <div class="landing-buttons">
+                    <button type="button" class="js-bio landing-button">Bio</button>
+                    <button type="button" class="js-portfolio landing-button">Portfolio</button>
+                </div>
             </header>
             <section class="bio hidden">
                 <h2>About Me:</h2>
                 <p>I am a web developer based in Pennsylvania’s Lehigh Valley. My love of languages led me to coding and now
                     I have a passion for developing websites and web apps that allow me to express my creativity and
                     exercise my intellect. I’m also a classicist who specializes in Greek and Roman history. In my spare
-                    time, I work as a digital humanist and create online resources for students of the ancient world.</p>
+                    time, I work as a digital humanist and create online resources for students of the ancient world.
+                </p>
                 <div class="email-port-buttons">
-                    <a href="mailto:luther.karper@live.com"><button type="button">Email</button></a>
+                    <a href="mailto:luther.karper@live.com">Email</a>
                     <button class="js-portfolio" type="button">Portfolio</button>
                 </div>
             </section>
             <section class="portfolio hidden">
                 <h2>Portfolio:</h2>
                 <section class="port-section">
-                    <div class="js-port-big port-img-big">
+                    <div class="js-port-big port-img-big" role="img">
                         <img src="images/quiz-app-landing-small.png" alt="Quiz app landing page.">
                     </div>
                     <div role="img" class="carousel">
-                        <img src="images/quiz-app-landing-small.png" alt="Quiz app landing page.">
-                        <img src="images/quiz-app-question-small.png" alt="Quiz app question page.">
-                        <img src="images/quiz-app-answer-small.png" alt="Quiz app answer page.">
-                        <img src="images/quiz-app-results-small.png" alt="Quiz app results page.">
+                        <a href="#"><img src="images/quiz-app-landing-small.png" alt="Quiz app landing page."></a>
+                        <a href="#"><img src="images/quiz-app-question-small.png" alt="Quiz app question page."></a>
+                        <a href="#"><img src="images/quiz-app-answer-small.png" alt="Quiz app answer page."></a>
+                        <a href="#"><img src="images/quiz-app-results-small.png" alt="Quiz app results page."></a>
                     </div>
                     <p class="click-to-enlarge">(Click to enlarge)</p>
                     <div class="project-links">
@@ -67,21 +71,23 @@
                         <img class="tech-icon" src="images/javascript-icon.png" alt="JavaScript icon">
                         <img class="tech-icon" src="images/jquery-icon.png" alt="jQuery icon">
                     </div>
-                    <p>This app, designed for students and teachers, quizzes users on their knowledge of the Julio-Claudian emperors of Rome. Throughout the
-                        quiz, users can see their progress and current score. Upon completion, users are presented with a
-                        score-dependent message and image.</p>
-                    
+                    <p>This app, designed for students and teachers, quizzes users on their knowledge of the
+                        Julio-Claudian emperors of Rome. Throughout the quiz, users can see their progress and current score. 
+                        Upon completion, users are presented with a score-dependent message and image.</p>
                 </section>
             </section>
         </main>
         <footer>
             <a href="mailto:luther.karper@live.com"><i class="fas fa-envelope mail-icon"></i></a>
-            <p>Send me a message at: <a class="footer-email" href="mailto:luther.karper@live.com">luther.karper@live.com</a></p>
+            <p>Send me a message at: <a class="footer-email"
+                    href="mailto:luther.karper@live.com">luther.karper@live.com</a></p>
             <a href="http://www.linkedin.com/in/luther-karper"><i class="fab fa-linkedin-in linked-in"></i></a>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
-
 </html>

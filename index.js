@@ -47,8 +47,9 @@ function checkWindowSize() {
 }
 
 function handleCarousel() {
-    $('.carousel').on('click', 'img', event => {
-        const imageHTML = $(event.currentTarget).clone();
+    $('.carousel').on('click', 'a', event => {
+        event.preventDefault();
+        const imageHTML = $(event.currentTarget).children().clone();
         $('.js-port-big').html(imageHTML);
     });
 }
