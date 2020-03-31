@@ -14,7 +14,11 @@ function handleBio() {
             $('.portfolio').toggleClass('hidden');
         }
         if ($('.bio').hasClass('hidden')) {
-            $('.bio').toggleClass('hidden')    
+            $('.bio').toggleClass('hidden');
+            window.scrollTo(0, 0); 
+        }
+        if (!$('.bio').hasClass('hidden')) {
+            window.scrollTo(0, 0); 
         }
     });
 }
@@ -26,9 +30,13 @@ function handlePortfolio() {
         }
         if ($('.portfolio').hasClass('hidden')) {
             $('.portfolio').toggleClass('hidden');
+            window.scrollTo(0, 0);
         }
         if (!$('.bio').hasClass('hidden')) {
             $('.bio').toggleClass('hidden');    
+        }
+        if (!$('.portfolio').hasClass('hidden')) {
+            window.scrollTo(0, 0);
         }
     });
 }
