@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +12,18 @@
     <link rel="stylesheet" href="style.css">
     <title>Luther Karper - Web Developer</title>
 </head>
+
 <body>
     <nav>
         <div class="small-container">
             <a class="title" href=".">Luther Karper</a>
-            <i class="fas fa-bars js-menu toggle"></i>
+            <button type="button" class="js-menu toggle"><i class="fas fa-bars burger"></i></button>
         </div>
-        <ul id="nav-ul">                    
+        <ul id="nav-ul">
             <li class="js-bio"><button type="button">Bio</button></li>
             <li class="js-portfolio"><button type="button">Portfolio</button></li>
-            <li><a href="https://github.com/lkarper">GitHub</a></li>
-            <li><a href="http://www.linkedin.com/in/luther-karper">LinkedIn</a></li>
+            <li><a href="https://github.com/lkarper" target="_blank">GitHub</a></li>
+            <li><a href="http://www.linkedin.com/in/luther-karper" target="_blank">LinkedIn</a></li>
         </ul>
     </nav>
     <div class="content" role="region">
@@ -36,13 +38,14 @@
             </header>
             <section class="bio hidden">
                 <h2>About Me:</h2>
-                <p>I am a web developer based in Pennsylvania’s Lehigh Valley. My love of languages led me to coding and now
-                    I have a passion for developing websites and web apps that allow me to express my creativity and
-                    exercise my intellect. I’m also a classicist who specializes in Greek and Roman history. In my spare
-                    time, I work as a digital humanist and create online resources for students of the ancient world.
-                </p>
+                <p>I am a web developer based in Pennsylvania’s Lehigh Valley. My love of languages led me to coding and
+                    now I have a passion for developing websites and web apps that allow me to express my creativity and
+                    exercise my intellect. My goal is to join a team of great programmers who enjoy coding as much as I
+                    do.</p>
+                <p>I’m also a classicist who specializes in Greek and Roman history. In my spare time, I work as a
+                    digital humanist and create online resources for students of the ancient world.</p>
                 <div class="email-port-buttons">
-                    <a href="mailto:luther.karper@live.com">Email</a>
+                    <a href="mailto:luther.karper@live.com" target="_blank">Email</a>
                     <button class="js-portfolio" type="button">Portfolio</button>
                 </div>
             </section>
@@ -60,9 +63,8 @@
                     </div>
                     <p class="click-to-enlarge">(Click to enlarge)</p>
                     <div class="project-links">
-                        <a href="https://github.com/lkarper/quiz-app">GitHub</a>
-                        <i class="fab fa-pagelines"></i>
-                        <a href="https://lkarper.github.io/quiz-app/">Demo</a>
+                        <a href="https://github.com/lkarper/quiz-app" target="_blank">GitHub</a>
+                        <a href="https://lkarper.github.io/quiz-app/" target="_blank">Demo</a>
                     </div>
                     <h3>Quiz App on the Julio-Claudian Emperors</h3>
                     <div class="tech-container">
@@ -72,22 +74,22 @@
                         <img class="tech-icon" src="images/jquery-icon.png" alt="jQuery icon">
                     </div>
                     <p>This app, designed for students and teachers, quizzes users on their knowledge of the
-                        Julio-Claudian emperors of Rome. Throughout the quiz, users can see their progress and current score. 
-                        Upon completion, users are presented with a score-dependent message and image.</p>
+                        Julio-Claudian emperors of Rome. Throughout the quiz, users can see their progress and current
+                        score. Upon completion, users are presented with a score-dependent message and image.</p>     
                 </section>
             </section>
         </main>
         <footer>
-            <a href="mailto:luther.karper@live.com"><i class="fas fa-envelope mail-icon"></i></a>
-            <p>Send me a message at: <a class="footer-email"
-                    href="mailto:luther.karper@live.com">luther.karper@live.com</a></p>
-            <a href="http://www.linkedin.com/in/luther-karper"><i class="fab fa-linkedin-in linked-in"></i></a>
+            <a href="mailto:luther.karper@live.com" target="_blank"><i class="fas fa-envelope mail-icon"></i></a>
+            <p>Send me a message at: <a class="footer-email" href="mailto:luther.karper@live.com"
+                    target="_blank">luther.karper@live.com</a></p>
+            <a href="http://www.linkedin.com/in/luther-karper" target="_blank"><i
+                    class="fab fa-linkedin-in linked-in"></i></a>
         </footer>
     </div>
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
+
 </html>

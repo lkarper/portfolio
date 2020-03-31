@@ -100,6 +100,11 @@ li button:hover, li button:focus {
     text-align: right;
     font-size: 25px;
     display: inline-block;
+    border: none;
+}
+
+.burger {
+    color: white;
 }
 
 .active {
@@ -219,14 +224,22 @@ h3 {
 }
 
 .project-links a {
-    text-decoration: none;
-    color: black;
+    color: white;
+    background: black;
+    border: 1px solid black;
     font-family: 'Zilla Slab', serif;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 5px;
+    text-decoration: none;
+    margin: 5px;
+    height: 40px;
 }
 
 .project-links a:hover, .project-links a:focus {
-    text-decoration: underline;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
 }
 
 .carousel {
