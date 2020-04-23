@@ -222,6 +222,7 @@ section p {
 
 h3 {
     font-family: 'Zilla Slab', serif;
+    font-size: 28px;
 }
 
 .project-links {
@@ -386,6 +387,10 @@ button {
 
     .landing-buttons {
         display: none;
+    }
+
+    .project-description {
+        margin-top: 0;
     }
 }
 

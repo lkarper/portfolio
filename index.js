@@ -58,7 +58,7 @@ function handleCarousel() {
     $('.carousel').on('click', 'a', event => {
         event.preventDefault();
         const imageHTML = $(event.currentTarget).children().clone();
-        $('.js-port-big').html(imageHTML);
+        $(event.currentTarget).parent().prev('.js-port-big').html(imageHTML);
     });
 }
 
