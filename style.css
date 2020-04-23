@@ -258,11 +258,12 @@ h3 {
     justify-content: space-between;
     align-items: flex-end;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 
 .carousel a {
     height: auto;
-    width: 24.5%;   
+    width: 24.5%;
 }
 
 .carousel a img {
