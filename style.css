@@ -214,9 +214,11 @@ section p {
     margin: auto;
 }
 
-.port-img-big {
-    position: relative;
-    overflow: hidden;
+.port-img-big img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 1px solid black;
 }
 
 .slides {
@@ -250,6 +252,8 @@ section p {
     position: relative;
     width: 100%;
     height: auto;
+    text-align: center;
+    border: 1px solid black;
 }
 
 h3 {
@@ -290,12 +294,37 @@ h3 {
     justify-content: space-between;
     align-items: flex-end;
     cursor: pointer;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    position: relative;
+}
+
+.carousel::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .carousel a {
     height: auto;
     width: 24.5%;
+}
+
+.carousel-rr-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-rr a {
+    flex-shrink: 0;
+    margin-right: 5px;
 }
 
 .carousel a img {
