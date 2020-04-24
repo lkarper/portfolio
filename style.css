@@ -359,9 +359,15 @@ button {
         z-index: 10;
         padding: 5px;
         font-size: 25px;
+        background: none;
+        border: none;
     }
     
     .previous:hover, .next:hover, .previous:focus, .next:focus {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .previous:active, .next:active {
         background-color: rgba(0, 0, 0, 0.8);
     }
     
@@ -450,5 +456,9 @@ button {
 
     .project-description {
         margin-top: 0;
+    }
+
+    .slides img {
+        margin: 0;
     }
 }
