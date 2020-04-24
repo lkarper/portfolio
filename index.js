@@ -58,7 +58,11 @@ function handleCarousel() {
     $('.carousel').on('click', 'a', event => {
         event.preventDefault();
         const imageHTML = $(event.currentTarget).children().clone();
-        $(event.currentTarget).parent().prev('.js-port-big').html(imageHTML);
+        if ($(event.currentTarget).hasClass('js-rr')) {
+            $(event.currentTarget).parent().parent().prev('.js-port-big').html(imageHTML);
+        } else {
+            $(event.currentTarget).parent().prev('.js-port-big').html(imageHTML);
+        }
     });
 }
 
