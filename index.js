@@ -1,5 +1,5 @@
-let project1N = 1;
-let project2N = 1;
+// let project1N = 1;
+// let project2N = 1;
 
 function handleNavBars() {
     $('.js-menu').click(() => {
@@ -55,6 +55,12 @@ function checkWindowSize() {
             $('.bio').toggleClass('hidden');    
         }
     }
+}
+
+function centerCarousel() {
+    $('.slides').animate({
+        scrollLeft: $('.slides').scrollLeft() + 1
+    });
 }
 
 // function handleCarousel() {
@@ -138,6 +144,7 @@ function scrollLeft() {
 
 $(window).resize(() => {
     checkWindowSize();
+    centerCarousel();
 });
 
 function loadPage() {
