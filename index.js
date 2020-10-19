@@ -67,6 +67,7 @@ function handleCarousel() {
     $('.carousel').on('click', 'a', event => {
         event.preventDefault();
         const imageHTML = $(event.currentTarget).children().clone();
+        // Carousels with many images are nested in an outer div that forms a vertically scrollable container
         if ($(event.currentTarget).hasClass('js-rr')) {
             $(event.currentTarget).parent().parent().prev('.js-port-big').html(imageHTML);
         } else {

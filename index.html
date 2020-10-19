@@ -16,8 +16,10 @@
     <nav>
         <div class="small-container">
             <a class="title" href=".">Luther Karper</a>
+            <!-- Hamburger button, displayed on mobile screens -->
             <button type="button" class="js-menu toggle"><i class="fas fa-bars burger"></i></button>
         </div>
+        <!-- Navigation bar, fixed to the top of the page -->
         <ul id="nav-ul">
             <li class="js-bio"><button type="button">Bio</button></li>
             <li class="js-portfolio"><button type="button">Portfolio</button></li>
@@ -35,6 +37,7 @@
                     <button type="button" class="js-portfolio landing-button">Portfolio</button>
                 </div>
             </header>
+            <!-- The longer biography is initially hidden on landing, if the screen is fewer than 750px wide, and made visible when the Bio button is pressed -->
             <section class="bio hidden">
                 <h2>About Me:</h2>
                 <p>
@@ -52,14 +55,18 @@
                     <button class="js-portfolio" type="button">Portfolio</button>
                 </div>
             </section>
+            <!-- Portfolio is initially hidden, and made visible when the Portfolio button is pressed -->
             <section class="portfolio hidden">
                 <h2>Portfolio:</h2>
                 <section class="port-section">
                     <h3>Legendum</h3>
+                    <!-- The div below holds a large screenshot from the app -->
                     <div class="js-port-big port-img-big" role="img">
                         <img src="images/legendum-screenshots/story_1.png" alt="Legendum story page.">
                     </div>
+                    <!-- The outer div below holds thumbnails, and is used to create a horizontally scrollable container -->
                     <div class="carousel-rr-container">
+                        <!-- The div below holds thumbnails of other screenshots that can be displayed above on click -->
                         <div role="img" class="carousel carousel-rr">
                             <a class="js-rr" href="#"><img src="images/legendum-screenshots/story_1.png"
                                     alt="Legendum story page."></a>
@@ -123,7 +130,7 @@
                         explanations, and tips throughout the lesson that a user can toggle on and off. This means that
                         users can avoid the stress of "not knowing" what's going on. Stress is a major impediment to
                         language learning, so Legendum aims to make learning Latin as stress-free as possible!
-                        Registered users can save the grammatical tidbits that are presented and can even add personal
+                        Registered users can save the grammatical tidbits that are presented that can even add personal
                         notes.
                     </p>
                     <p class="project-description">
@@ -136,10 +143,13 @@
                 </section>
                 <section class="port-section">
                     <h3>Dog Date</h3>
+                     <!-- The div below holds a large screenshot from the app -->
                     <div class="js-port-big port-img-big" role="img">
                         <img src="images/dog-date-screenshots/dashboard_1.png" alt="Dog Date dashboard page.">
                     </div>
+                    <!-- The outer div below holds thumbnails, and is used to create a horizontally scrollable container -->
                     <div class="carousel-rr-container">
+                        <!-- The div below holds thumbnails of other screenshots that can be displayed above on click -->
                         <div role="img" class="carousel carousel-rr">
                             <a class="js-rr" href="#"><img src="images/dog-date-screenshots/dashboard_1.png"
                                     alt="Dog Date dashboard page."></a>
@@ -212,10 +222,13 @@
                 </section>
                 <section class="port-section">
                     <h3>Restaurant Roulette</h3>
+                    <!-- The div below holds a large screenshot from the app -->
                     <div class="js-port-big port-img-big" role="img">
                         <img src="images/rr-screenshots/landing.png" alt="Restaurant Roulette landing page.">
                     </div>
+                    <!-- The outer div below holds thumbnails, and is used to create a horizontally scrollable container -->
                     <div class="carousel-rr-container">
+                        <!-- The div below holds thumbnails of other screenshots that can be displayed above on click -->
                         <div role="img" class="carousel carousel-rr">
                             <a class="js-rr" href="#"><img src="images/rr-screenshots/landing.png"
                                     alt="Restaurant Roulette landing page."></a>
@@ -262,10 +275,12 @@
                 </section>
                 <section class="port-section">
                     <h3>Quiz App on the Julio-Claudian Emperors</h3>
+                     <!-- The div below holds a large screenshot from the app -->
                     <div class="js-port-big port-img-big" role="img">
                         <img src="images/quiz-app-landing-small.png" alt="Quiz app landing page.">
 
                     </div>
+                    <!-- The div below holds thumbnails of other screenshots that can be displayed above on click -->
                     <div role="img" class="carousel">
                         <a href="#"><img src="images/quiz-app-landing-small.png" alt="Quiz app landing page."></a>
                         <a href="#"><img src="images/quiz-app-question-small.png" alt="Quiz app question page."></a>
