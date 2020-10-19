@@ -1,3 +1,4 @@
+// Toggles the drop-down menu when the hamburger button is clicked on mobile
 function handleNavBars() {
     $('.js-menu').click(() => {
         $('ul').toggleClass('active');
@@ -5,6 +6,7 @@ function handleNavBars() {
     });    
 }
 
+// Toggles the visibility of the biography section of the site when the "bio" button is clicked
 function handleBio() {
     $('.js-bio').click(() => {
         if (!$('.js-header').hasClass('hidden')) {
@@ -23,6 +25,7 @@ function handleBio() {
     });
 }
 
+// Toggles the visibility of the portfolio section of the site when the "portfolio" button is clicked
 function handlePortfolio() {
     $('.js-portfolio').click(() => {
         if (!$('.js-header').hasClass('hidden')) {
@@ -41,6 +44,10 @@ function handlePortfolio() {
     });
 }
 
+/* 
+    Checks the window size on window resize, and alters whether the short or long 
+    version of the bio is displayed, based on window-size
+*/
 function checkWindowSize() {
     if ($('.toggle').is(':hidden') && $('header').is(':visible')) {
         if ($('.bio').hasClass('hidden')) {
@@ -54,6 +61,7 @@ function checkWindowSize() {
     }
 }
 
+// When a thumbnail is clicked, loads the full-sized image of that thumbnail into the main image display
 function handleCarousel() {
     $('.carousel').on('click', 'a', event => {
         event.preventDefault();
@@ -70,6 +78,7 @@ $(window).resize(() => {
     checkWindowSize();
 });
 
+// Adds event listeners on page load
 function loadPage() {
     handleNavBars();
     handleBio();
