@@ -42,6 +42,7 @@ nav {
     top: 0;
     display: flex;
     flex-direction: column;
+    /* Create a smooth drop-down effect */
     -webkit-transition:height 200ms ease;
     -moz-transition:height 200ms ease;
     -o-transition:height 200ms ease;
@@ -62,6 +63,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* Create a smooth drop-down effect */
     -webkit-transition:height 200ms ease;
     -moz-transition:height 200ms ease;
     -o-transition:height 200ms ease;
@@ -227,41 +229,6 @@ section p {
     border: 1px solid black;
 }
 
-.slides {
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    position: relative;
-}
-
-.slides::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-.slides::-webkit-scrollbar-thumb {
-    background: black;
-    border-radius: 10px;
-}
-
-.slides::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.slides img {
-    margin-right: 10px;
-    scroll-snap-align: start;
-    transform-origin: center center;
-    transform: scale(1);
-    transition: transform 0.5s;
-    position: relative;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    border: 1px solid black;
-}
-
 h3 {
     font-family: 'Zilla Slab', serif;
     font-size: 28px;
@@ -305,6 +272,7 @@ h3 {
     position: relative;
 }
 
+/* Used to create a custom scrollbar on the carousel of thumbnails */
 .carousel::-webkit-scrollbar {
     width: 10px;
     height: 10px;
