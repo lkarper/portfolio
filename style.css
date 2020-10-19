@@ -190,8 +190,7 @@ section p {
 
 .tech-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
 }
 
 .tech-icon {
@@ -277,6 +276,7 @@ h3 {
     text-decoration: none;
     margin: 5px;
     height: 40px;
+    display: inline-block;
 }
 
 .project-links a:hover, .project-links a:focus {
@@ -489,5 +489,17 @@ button {
 
     .slides img {
         margin: 0;
+    }
+
+    .tech-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .project-links a {
+        display: inline;
     }
 }
