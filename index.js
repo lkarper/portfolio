@@ -46,9 +46,10 @@ function handlePortfolio() {
 
 /* 
     Checks the window size on window resize, and alters whether the short or long 
-    version of the bio is displayed, based on window-size
+    version of the bio is displayed on landing, based on window-size
 */
 function checkWindowSize() {
+    // If the full-size header is displayed, then the full bio should be displayed on landing
     if ($('.toggle').is(':hidden') && $('header').is(':visible')) {
         if ($('.bio').hasClass('hidden')) {
             $('.bio').toggleClass('hidden');    
